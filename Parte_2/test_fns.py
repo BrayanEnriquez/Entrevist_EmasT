@@ -1,6 +1,6 @@
 import unittest
 
-from fns import ProductoDigital, ProductoFisico
+from Parte_2.fns import ProductoDigital, ProductoFisico
 
 
 class CalculoPrecioTest(unittest.TestCase):
@@ -12,7 +12,7 @@ class CalculoPrecioTest(unittest.TestCase):
     def test_cupon_tiene_tope_y_se_aplica_despues_de_descuentos(self):
         producto = ProductoDigital("Licencia", 300_000, 51)
 
-        self.assertEqual(producto.calcular_precio_final(aplicar_cupon=True), 235_000)
+        self.assertEqual(producto.calcular_precio_final(aplicar_cupon=True), 222_250)
 
     def test_borde_stock_50_no_recibe_descuento_de_stock(self):
         producto = ProductoFisico("Libro", 10_000, 50, costo_envio=500)

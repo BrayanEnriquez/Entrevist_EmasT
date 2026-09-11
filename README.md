@@ -27,8 +27,8 @@ queda por debajo de $5.000.
 
 ### Pruebas
 
-Desde `Parte_2` ejecutar:
+Desde la raíz del repositorio ejecutar:
 
 ```text
-python -m unittest -v test_fns.py
+python -m unittest -v Parte_2.test_fns
 ```

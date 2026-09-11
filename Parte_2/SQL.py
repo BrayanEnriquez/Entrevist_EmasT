@@ -1,3 +1,5 @@
+"""
+
 SELECT p.nombre
 	, c.nombre
 FROM productos p
@@ -21,3 +23,5 @@ RIGHT JOIN movimientos m
 ON p.id = m.producto_id
 WHERE tipo = 'entrada'
 GROUP BY p.Nombre
+
+"""
